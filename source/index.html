@@ -16,12 +16,12 @@
     </svg> -->
     <main class="main">
       <h1 class="visually-hidden">Проект "Стажировка"</h1>
-      <section class="hero" data-test="hero">
+      <section class="hero visually-hidden" data-test="hero">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="wrapper hero__wrapper">
           <header class="hero__header">
             <nav class="hero__navigation">
-              <img class="hero__logo" src="#" alt="#" width="" height="">
+            <img class="hero__logo" src="./img/logo.svg" alt="Лого сайта стажировки." width="50" height="50">
               <button class="hero__menu-button button" type="button">Меню</button>
               <ul class="hero__menu list-reset">
                 <li class="hero__menu-item"><a class="hero__menu-link" href="#">О проекте</a></li>
@@ -52,28 +52,49 @@
           </header>
         </div>
         <div class="hero__slider slider">
-          <div class="slider__navigation">
-            <button class="slider__button" type="button"><span class="visually-hidden">Слайд 1</span></button>
-            <button class="slider__button" type="button"><span class="visually-hidden">Слайд 2</span></button>
-            <button class="slider__button" type="button"><span class="visually-hidden">Слайд 3</span></button>
+          <div class="slider__element slider__element--first slider__element--current">
+            <div class="slider__navigation">
+              <button class="slider__nav-button slider__nav-button--active" type="button"><span class="visually-hidden">Слайд 1</span></button>
+              <button class="slider__nav-button" type="button"><span class="visually-hidden">Слайд 2</span></button>
+              <button class="slider__nav-button" type="button"><span class="visually-hidden">Слайд 3</span></button>
+            </div>
+            <div class="slider__content">
+              <h3 class="slider__title">Глобальный профессиональный опыт обучения за рубежом</h3>
+              <div class="slider__content-wrapper">
+                <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                <div class="slider__button-container">
+                  <a class="slider__button-more button" href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="slider__element">
-            <h3 class="slider__title">Глобальный профессиональный опыт обучения за рубежом</h3>
-            <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
-            <a class="slider__button-more button" href="#">подробнее</a>
-          </div>
-          <div class="slider__element">
+          <div class="slider__element slider__element--second">
+            <div class="slider__navigation">
+              <button class="slider__nav-button" type="button"><span class="visually-hidden">Слайд 1</span></button>
+              <button class="slider__nav-button slider__nav-button--active" type="button"><span class="visually-hidden">Слайд 2</span></button>
+              <button class="slider__nav-button" type="button"><span class="visually-hidden">Слайд 3</span></button>
+            </div>
             <h3 class="slider__title">Волонтёрские программы – внесите свой вклад в общество</h3>
             <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
-            <a class="slider__button-more button" href="#">подробнее</a>
+            <div class="slider__button-container">
+              <a class="slider__button-more button" href="#">подробнее</a>
+            </div>
           </div>
-          <div class="slider__element">
+          <div class="slider__element slider__element--third">
+            <div class="slider__navigation">
+              <button class="slider__nav-button" type="button"><span class="visually-hidden">Слайд 1</span></button>
+              <button class="slider__nav-button" type="button"><span class="visually-hidden">Слайд 2</span></button>
+              <button class="slider__nav-button slider__nav-button--active" type="button"><span class="visually-hidden">Слайд 3</span></button>
+            </div>
             <h3 class="slider__title">Программы стажировок в крупнейших компаниях мира</h3>
             <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
-            <a class="slider__button-more button" href="#">подробнее</a>
+            <div class="slider__button-container">
+              <a class="slider__button-more button" href="#">подробнее</a>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="about" data-test="about">
         <div class="wrapper about__wrapper">
           <h2 class="about__title">О проекте «Стажировка»</h2>
