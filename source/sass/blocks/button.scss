@@ -1,3 +1,61 @@
-// .button {
+.button {
+  position: relative;
+}
 
-// }
+.button--primary {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+  color: $color-secondary;
+  background-color: transparent;
+  border: 1px solid $button-border;
+  border-radius: 30px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  text-align: start;
+
+  @media (min-width: $min-tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    padding: 20px 30px;
+  }
+}
+
+.button--icon {
+  &::before {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    content: '';
+    background-color: $icons-background-main;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    content: '';
+    background-color: $icons-main;
+    mask-size: 16px 8px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  @media (min-width: $min-tablet-width) {
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+  }
+}
