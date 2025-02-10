@@ -16,7 +16,7 @@
     </svg> -->
     <main class="main">
       <h1 class="visually-hidden">Проект "Стажировка"</h1>
-      <section class="hero visually-hidden" data-test="hero">
+      <!-- <section class="hero" data-test="hero">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="wrapper hero__wrapper">
           <header class="hero__header">
@@ -164,26 +164,38 @@
           </div>
         </div>
       </section>
+
       <section class="grant" data-test="grant">
         <div class="wrapper grant__wrapper">
-          <h2 class="grant__title">Как поехать</h2>
-          <p>Свяжитесь с координатором, чтобы узнать
-            полную информацию. Вы получите
-            актуальные сведения о доступных
-            программах и городах, в которых можете
-            пройти программу.</p>
-            <img class="grant__image" src="#" alt="#" width="" height="">
-            <div class="grant__requirements">
-              <h3 class="grant__requirements-title">Чтобы получить грант на обучение, вам нужно:</h3>
-              <ol class="grant__requirements-list list-reset">
-                <li class="grant__requirements-item">Быть в возрасте от 16 до 30 лет</li>
-                <li class="grant__requirements-item">Иметь оконченное среднее образование</li>
-                <li class="grant__requirements-item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
-                <li class="grant__requirements-item">За последние 2 года быть не больше 3х месяцев подряд непрерывно в одной стране</li>
-              </ol>
-            </div>
+          <div class="grant__description-container">
+            <h2 class="grant__title">Как поехать</h2>
+            <p>Свяжитесь с координатором, чтобы узнать
+              полную информацию. Вы получите
+              актуальные сведения о доступных
+              программах и городах, в которых можете
+              пройти программу.
+            </p>
+            <picture class="grant__picture">
+              <source type="image/webp" media="(min-width: 1440px)" width="498" height="363" srcset="./img/grant/main-desktop@1x.webp 1x, ./img/grant/main-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="678" height="375" srcset="./img/grant/main-tablet@1x.webp 1x, ./img/grant/main-tablet@2x.webp 2x">
+              <source type="image/webp" width="280" height="280" srcset="./img/grant/main-mobile@1x.webp 1x, ./img/grant/main-mobile@2x.webp 2x">
+              <source type="image/png" media="(min-width: 1440px)" width="498" height="363" srcset="./img/grant/main-desktop@1x.png 1x, ./img/grant/main-desktop@2x.png 2x">
+              <source type="image/png" media="(min-width: 768px)" width="678" height="375" srcset="./img/grant/main-tablet@1x.png 1x, ./img/grant/main-tablet@2x.png 2x">
+              <img class="grant__image" src="./img/grant/main-mobile@1x.png" srcset="./img/grant/main-mobile@2x.png 2x" alt="Указатели направлений в разные страны." width="290" height="200">
+            </picture>
+          </div>
+          <div class="grant__requirements">
+            <h3 class="grant__requirements-title">Чтобы получить грант на обучение, вам нужно:</h3>
+            <ol class="grant__requirements-list list-reset">
+              <li class="grant__requirements-item" index="1">Быть в возрасте от 16 до 30 лет</li>
+              <li class="grant__requirements-item" index="2">Иметь оконченное среднее образование</li>
+              <li class="grant__requirements-item" index="3">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
+              <li class="grant__requirements-item" index="4">За последние 2 года быть не больше 3х месяцев подряд непрерывно в одной стране</li>
+            </ol>
+          </div>
         </div>
-      </section>
+      </section> -->
+
       <section class="news" data-test="news">
         <div class="wrapper news__wrapper">
           <h2 class="news__title">Новости и материалы</h2>

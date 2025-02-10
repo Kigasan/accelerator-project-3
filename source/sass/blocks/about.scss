@@ -160,8 +160,8 @@
   &::before {
     position: absolute;
     content: '';
-    top: -21px;
-    left: -21px;
+    top: -20px;
+    left: -22px;
     width: 42px;
     height: 42px;
     background-color: $background-special;
@@ -171,8 +171,8 @@
   &::after {
     position: absolute;
     content: '';
-    top: -21px;
-    left: -21px;
+    top: -20px;
+    left: -22px;
     width: 42px;
     height: 42px;
     background-color: $background-primary;
