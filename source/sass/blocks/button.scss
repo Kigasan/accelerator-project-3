@@ -5,6 +5,7 @@
 .button--primary {
   font-size: 12px;
   line-height: 12px;
+  font-weight: 500;
   letter-spacing: 0.24px;
   color: $color-secondary;
   background-color: transparent;
@@ -12,7 +13,10 @@
   border-radius: 30px;
   padding: 15px 20px;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: start;
+  display: inline-block;
+  box-sizing: border-box;
 
   @media (min-width: $min-tablet-width) {
     font-size: 14px;
