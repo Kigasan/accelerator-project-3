@@ -1,0 +1,33 @@
+.reviews__wrapper {
+  padding: 50px 15px;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 50px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px;
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 5px 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-secondary;
+
+  @media (min-width: $min-tablet-width) {
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 3px;
+    font-size: 50px;
+  }
+}

@@ -1,31 +1,32 @@
 const burgerButton = document.querySelector('[header-burger-button]');
 const headerList = document.querySelector('[header-list]');
-const headerCategoryTitleList = headerList.querySelectorAll('[header-category-title]');
-// const headerInnerList = document.querySelector('[header-inner-list]');
 
 function init () {
   burgerButton.addEventListener('click', () => {
     document.body.classList.toggle('page-body--darken');
     headerList.classList.toggle('hero__menu--opened');
-    burgerButton.style.width = `${headerList.offsetWidth}px`;
     burgerButton.classList.toggle('hero__menu-button--active');
-
-    // document.addEventListener('click', (event) => {
-    //   if (!event.target.classList.contains('hero__menu') && !event.target.classList.contains('hero__menu-button') && !event.target.parentElement.classList.contains('hero__menu')) {
-    //     document.body.classList.remove('page-body--darken');
-    //     headerList.classList.remove('hero__menu--opened');
-    //     burgerButton.style.width = `${headerList.offsetWidth}px`;
-    //     burgerButton.classList.remove('hero__menu-button--active');
-    //   }
-    // })
+    headerList.addEventListener('click', switchMenuCategoryState)
+    document.addEventListener('click', closeHeaderMenu)
   })
+}
 
-  headerCategoryTitleList.forEach((title) => {
-    title.addEventListener('click', () => {
-      title.classList.toggle('hero__menu-category-title--active');
-      title.nextElementSibling.classList.toggle('hero__menu-category-list--opened');
-    })
-  })
+function switchMenuCategoryState (event) {
+  if (event.target.hasAttribute('header-category-title')) {
+    event.target.classList.toggle('hero__menu-category-title--active');
+    event.target.nextElementSibling.classList.toggle('hero__menu-category-list--opened');
+  }
+}
+
+function closeHeaderMenu (event) {
+  if (!event.target.hasAttribute('header-list') && !event.target.hasAttribute('header-category-title') && !event.target.hasAttribute('header-inner-list') && !event.target.hasAttribute('header-burger-button')) {
+    document.body.classList.remove('page-body--darken');
+    headerList.classList.remove('hero__menu--opened');
+    burgerButton.classList.remove('hero__menu-button--active');
+
+    headerList.removeEventListener('click', switchMenuCategoryState)
+    document.removeEventListener('click', closeHeaderMenu)
+  }
 }
 
 export { init as BurgerInit };

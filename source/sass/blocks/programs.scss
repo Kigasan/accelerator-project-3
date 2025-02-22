@@ -1,14 +1,19 @@
 .programs {
   background-color: $background-secondary;
+  position: relative;
 }
 
 .programs__wrapper {
+  // display: grid;
+  // grid-template-columns: 115px 52px;
+  // gap: 123px;
   padding: 50px 15px;
 
   @media (min-width: $min-tablet-width) {
     // padding: 50px 45px;
     padding-left: 45px;
     padding-right: 0;
+    gap: 123px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +22,7 @@
 }
 
 .programs__title {
+  display: inline-block;
   margin: 0;
   margin-bottom: 30px;
   padding: 5px 4px;
@@ -40,6 +46,9 @@
 }
 
 .programs__button-more {
+  position: absolute;
+  left: 15px;
+  bottom: 50px;
   min-width: 205px;
   padding-left: 30px;
 
@@ -49,6 +58,11 @@
 
   @media (min-width: $min-tablet-width) {
     min-width: 234px;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 

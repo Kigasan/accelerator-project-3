@@ -155,6 +155,7 @@
 
 .faq__question--opened p {
   // display: block;
+  height: unset;
   transform: scaleY(1);
   transition: all 0.3s;
   margin-top: 20px;

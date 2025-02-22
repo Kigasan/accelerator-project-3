@@ -41,7 +41,7 @@
 
 .hero__menu-button {
   position: relative;
-  min-width: 136px;
+  width: 136px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
@@ -53,7 +53,7 @@
   border: 1px solid $button-border;
   border-radius: 30px;
   box-sizing: border-box;
-  transition: width 300ms;
+  transition: 0.3s;
 
   &::before {
     position: absolute;
@@ -96,6 +96,7 @@
 .hero__menu-button--active {
   position: absolute;
   right: 0;
+  width: 290px;
   color: $color-light;
   background-color: $background-special;
 
@@ -111,29 +112,39 @@
 
   @media (min-width: $min-tablet-width) {
     position: relative;
+    width: 286px;
   }
 }
 
 .hero__menu {
-  display: none;
   position: absolute;
   top: 58px;
   right: 0;
+  padding: 0;
   background-color: $background-special;
   border-radius: 16px;
-  padding: 35px 139px 35px 25px;
+  width: 290px;
+  padding: 0 25px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s;
+  box-sizing: border-box;
+  overflow: hidden;
 
   @media (min-width: $min-tablet-width) {
+    width: 286px;
     top: 60px;
-    padding-right: 135px;
   }
 }
 
 .hero__menu--opened {
-  display: block;
+  padding: 35px 25px;
+  max-height: max-content;
+  opacity: 1;
 }
 
 .hero__menu-item {
+  width: max-content;
   margin-bottom: 28px;
 
   &:last-child {
@@ -153,18 +164,19 @@
 }
 
 .hero__menu-category-title {
-  display: inline-block;
   position: relative;
-  margin: 0;
+  padding: 0;
   padding-right: 22px;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.32px;
   font-weight: 500;
   color: $color-light;
+  background-color: transparent;
   opacity: 0.7;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
 
   &::after {
     position: absolute;

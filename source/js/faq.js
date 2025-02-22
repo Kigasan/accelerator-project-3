@@ -8,11 +8,11 @@ function init () {
       console.log(faqClicked.querySelector('p').style.height);
       console.log(faqClicked.querySelector('p').scrollHeight);
 
-      if (!faqClicked.classList.contains('faq__question--opened')) {
-        faqClicked.querySelector('p').style.height = `${faqClicked.querySelector('p').scrollHeight}px`;
-      } else {
-        faqClicked.querySelector('p').style.height = 0;
-      }
+      // if (!faqClicked.classList.contains('faq__question--opened')) {
+      //   faqClicked.querySelector('p').style.height = `${faqClicked.querySelector('p').scrollHeight}px`;
+      // } else {
+      //   faqClicked.querySelector('p').style.height = 0;
+      // }
 
       faqClicked.classList.toggle('faq__question--opened');
       faqButton.classList.toggle('faq__question-button--active');

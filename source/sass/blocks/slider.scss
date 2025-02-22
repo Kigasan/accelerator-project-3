@@ -17,7 +17,7 @@ div.slider__element {
   }
 }
 
-.slider__navigation {
+div.slider__pagination.swiper-pagination {
   position: absolute;
   left: 15px;
   width: 80px;
@@ -62,14 +62,16 @@ div.slider__element {
   }
 }
 
-.slider__nav-button {
+.slider .slider__pagination span.slider__pagination-button {
   width: 8px;
   height: 8px;
+  margin: 0;
   padding: 0;
   background-color: $background-primary;
   border: 2px solid $button-border;
   border-radius: 50%;
   box-sizing: border-box;
+  opacity: 1;
 
   @media (min-width: $min-tablet-width) {
     width: 12px;
@@ -77,7 +79,7 @@ div.slider__element {
   }
 }
 
-.swiper-pagination-bullet-active {
+.slider span.slider__pagination-button.swiper-pagination-bullet-active {
   background-color: $button-active;
 }
 
@@ -161,10 +163,6 @@ div.slider__element {
     );
   }
 }
-
-// .slider__element--current {
-//   display: flex;
-// }
 
 .slider__content {
   display: flex;

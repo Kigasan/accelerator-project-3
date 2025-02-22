@@ -3,14 +3,10 @@ function init (Swiper, Navigation) {
     modules: [Navigation],
     keyboard: true,
     // spaceBetween: 15,
-    cssMode: true,
-    allowTouchMove: true,
+    // cssMode: true,
+    // allowTouchMove: true,
 
     breakpoints: {
-      768: {
-        slidesPerGroup: 0.5,
-      },
-
       1440: {
         cssMode: false,
         allowTouchMove: false

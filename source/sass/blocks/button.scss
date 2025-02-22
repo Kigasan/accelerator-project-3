@@ -26,6 +26,30 @@
   }
 }
 
+.button--secondary {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  color: $color-light;
+  background-color: $background-special;
+  border: 1px solid $border-light;
+  border-radius: 30px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: start;
+  display: inline-block;
+  box-sizing: border-box;
+
+  @media (min-width: $min-tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    padding: 20px 30px;
+  }
+}
+
 .button--icon {
   &::before {
     position: absolute;
@@ -49,6 +73,7 @@
     mask-size: 16px 8px;
     mask-position: center;
     mask-repeat: no-repeat;
+    border-radius: 50%;
   }
 
   @media (min-width: $min-tablet-width) {
