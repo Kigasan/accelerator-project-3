@@ -1,22 +1,26 @@
 function init (Swiper, Navigation) {
-  const swiper = new Swiper('.slider-programs', {
+  new Swiper('.slider-programs', {
     modules: [Navigation],
-    keyboard: true,
-    // spaceBetween: 15,
-    // cssMode: true,
+    // keyboard: true,
     // allowTouchMove: true,
-
+    slidesPerView: 1,
+    spaceBetween: 15,
     breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+
       1440: {
-        cssMode: false,
+        slidesPerView: 3,
+        spaceBetween: 32,
         allowTouchMove: false
       },
     },
-
     navigation: {
-      nextEl: '.slider-programs__button--next',
-      prevEl: '.slider-programs__button--prev',
-      disabledClass: 'slider-programs__button--disabled'
+      nextEl: '.programs__slider-button--next',
+      prevEl: '.programs__slider-button--prev',
+      disabledClass: 'programs__slider-button--disabled'
     },
     scrollbar: {
       el: '.slider-programs__scrollbar',
@@ -26,4 +30,4 @@ function init (Swiper, Navigation) {
   });
 }
 
-export { init as ProgramsSliderInit }
+export { init as ProgramsSliderInit };

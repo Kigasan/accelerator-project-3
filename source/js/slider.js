@@ -6,7 +6,7 @@ function paginationBulletsPosition () {
 }
 
 function init (Swiper, Pagination) {
-  const swiper = new Swiper('.slider', {
+  new Swiper('.slider', {
     modules: [Pagination],
     loop: true,
     // effect: 'fade',
@@ -26,7 +26,7 @@ function init (Swiper, Pagination) {
         return `<span class="${className} slider__pagination-button swiper-pagination-bullet swiper-pagination-clickable swiper-pagination-bullet--${index + 1}"
         aria-label="перейти к слайду ${index + 1}"
         role="button">
-        </span>`
+        </span>`;
       }
     },
     on: {
@@ -39,4 +39,4 @@ function init (Swiper, Pagination) {
   });
 }
 
-export { init as SliderInit }
+export { init as SliderInit };

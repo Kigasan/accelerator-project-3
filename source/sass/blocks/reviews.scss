@@ -31,3 +31,45 @@
     font-size: 50px;
   }
 }
+
+.reviews__slider-navigation {
+  display: flex;
+  gap: 8px;
+}
+
+.reviews__slider-button {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: $icons-background-main;
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
+  }
+}
+
+.reviews__slider-button--prev {
+  &::after {
+    transform: rotate(-135deg);
+  }
+}
+
+.reviews__slider-button--next {
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.reviews__slider-button--disabled {
+  &::after {
+    background-color: $button-disabled;
+  }
+}

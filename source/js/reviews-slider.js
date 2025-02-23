@@ -1,12 +1,12 @@
 function init (Swiper, Navigation) {
-  const swiper = new Swiper('.reviews__slider', {
+  new Swiper('.reviews__slider', {
     modules: [Navigation],
     keyboard: true,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.reviews-slider__button--next',
-      prevEl: '.reviews-slider__button--prev',
-      disabledClass: 'reviews-slider__button--disabled'
+      nextEl: '.reviews__slider-button--next',
+      prevEl: '.reviews__slider-button--prev',
+      disabledClass: 'reviews__slider-button--disabled'
     },
     scrollbar: {
       el: '.reviews-slider__scrollbar',
@@ -15,4 +15,4 @@ function init (Swiper, Navigation) {
   });
 }
 
-export { init as ReviewsSliderInit }
+export { init as ReviewsSliderInit };

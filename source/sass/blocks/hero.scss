@@ -61,7 +61,7 @@
     right: 4px;
     width: 46px;
     height: 46px;
-    content: '';
+    content: "";
     background-color: $icons-background-main;
     border-radius: 50%;
   }
@@ -72,9 +72,9 @@
     right: 4px;
     width: 46px;
     height: 46px;
-    content: '';
+    content: "";
     background-color: $icons-main;
-    mask-image: url('/__spritemap#sprite-burger-menu-view');
+    mask-image: url("/__spritemap#sprite-burger-menu-view");
     mask-size: 16px 8px;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -106,7 +106,7 @@
 
   &::after {
     background-color: $icons-background-main;
-    mask-image: url('/__spritemap#sprite-close-button-view');
+    mask-image: url("/__spritemap#sprite-close-button-view");
     mask-size: 20px 20px;
   }
 
@@ -120,7 +120,6 @@
   position: absolute;
   top: 58px;
   right: 0;
-  padding: 0;
   background-color: $background-special;
   border-radius: 16px;
   width: 290px;
@@ -180,13 +179,13 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 2px;
     right: 0;
     width: 12px;
     height: 12px;
     background-color: $icons-main;
-    mask-image: url('/__spritemap#sprite-expand-arrow-view');
+    mask-image: url("/__spritemap#sprite-expand-arrow-view");
     transition: transform 0.3s;
   }
 }

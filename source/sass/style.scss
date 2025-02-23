@@ -4,36 +4,26 @@
 @import "vendor/normalize";
 
 // GLOBAL
-@import "./common/fonts.scss";
-@import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/fonts";
+@import "./common/variables";
+@import "./common/global";
 
 // BLOCKS
-@import "./blocks/page-body.scss";
-@import "./blocks/button.scss";
-
-@import "./blocks/hero.scss";
-@import "./blocks/slider.scss";
-
-@import "./blocks/about.scss";
-
-@import "./blocks/programs.scss";
-@import "./blocks/slider-programs.scss";
-
-@import "./blocks/grant.scss";
-
-@import "./blocks/news.scss";
-@import "./blocks/new.scss";
-
-@import "./blocks/faq.scss";
-
-@import "./blocks/reviews.scss";
-@import "./blocks/reviews-slider.scss";
-@import "./blocks/reviews-slide.scss";
-
-@import "./blocks/contacts.scss";
-
-@import "./blocks/form-section.scss";
-@import "./blocks/form.scss";
-
-@import "./blocks/page-footer.scss";
+@import "./blocks/page-body";
+@import "./blocks/button";
+@import "./blocks/hero";
+@import "./blocks/slider";
+@import "./blocks/about";
+@import "./blocks/programs";
+@import "./blocks/slider-programs";
+@import "./blocks/grant";
+@import "./blocks/news";
+@import "./blocks/new";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/reviews-slider";
+@import "./blocks/reviews-slide";
+@import "./blocks/contacts";
+@import "./blocks/form-section";
+@import "./blocks/form";
+@import "./blocks/page-footer";

@@ -5,8 +5,6 @@ function init () {
     if (!event.target.classList.contains('faq__questions-container')) {
       const faqClicked = event.target.closest('.faq__question');
       const faqButton = faqClicked.querySelector('.faq__question-button');
-      console.log(faqClicked.querySelector('p').style.height);
-      console.log(faqClicked.querySelector('p').scrollHeight);
 
       // if (!faqClicked.classList.contains('faq__question--opened')) {
       //   faqClicked.querySelector('p').style.height = `${faqClicked.querySelector('p').scrollHeight}px`;
@@ -17,7 +15,7 @@ function init () {
       faqClicked.classList.toggle('faq__question--opened');
       faqButton.classList.toggle('faq__question-button--active');
     }
-  })
+  });
 }
 
 export { init as FaqInit};

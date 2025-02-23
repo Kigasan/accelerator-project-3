@@ -50,6 +50,7 @@
 
 .grant__description-container > p {
   margin: 0;
+
   // margin-right: 2px;
   margin-bottom: 30px;
   font-size: 14px;
@@ -125,7 +126,7 @@
     justify-content: center;
     align-items: center;
 
-    content: attr(index);
+    content: attr(data-index);
     top: -5px;
     left: -15px;
     width: 32px;

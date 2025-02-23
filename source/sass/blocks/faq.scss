@@ -88,7 +88,7 @@
   }
 }
 
-.faq__question:nth-child(4) br{
+.faq__question:nth-child(4) br {
   display: none;
 
   @media (min-width: $min-tablet-width) {
@@ -111,13 +111,13 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: $icons-main;
-    mask-image: url('/__spritemap#sprite-plus-view');
+    mask-image: url("/__spritemap#sprite-plus-view");
     mask-size: 20px 20px;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -129,7 +129,7 @@
 
   &::before {
     background-color: $icons-background-main;
-    mask-image: url('/__spritemap#sprite-minus-view');
+    mask-image: url("/__spritemap#sprite-minus-view");
   }
 }
 

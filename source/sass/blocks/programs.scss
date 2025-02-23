@@ -4,15 +4,12 @@
 }
 
 .programs__wrapper {
-  // display: grid;
-  // grid-template-columns: 115px 52px;
-  // gap: 123px;
   padding: 50px 15px;
 
   @media (min-width: $min-tablet-width) {
-    // padding: 50px 45px;
-    padding-left: 45px;
-    padding-right: 0;
+    padding: 50px 45px;
+    // padding-left: 45px;
+    // padding-right: 0;
     gap: 123px;
   }
 
@@ -21,10 +18,25 @@
   }
 }
 
+.programs__header-container {
+  margin-bottom: 30px;
+
+  @media (min-width: $min-tablet-width) {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .programs__title {
   display: inline-block;
   margin: 0;
-  margin-bottom: 30px;
   padding: 5px 4px;
   padding-left: 0;
   font-size: 20px;
@@ -33,7 +45,6 @@
   color: $color-secondary;
 
   @media (min-width: $min-tablet-width) {
-    margin-bottom: 40px;
     padding: 3px 0;
     font-size: 34px;
     line-height: 50px;
@@ -53,16 +64,70 @@
   padding-left: 30px;
 
   &::after {
-    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
   }
 
   @media (min-width: $min-tablet-width) {
     min-width: 234px;
     position: relative;
-    top: 0;
-    right: 0;
-    margin-right: 0;
-    margin-left: auto;
+    bottom: auto;
+    left: auto;
   }
 }
 
+.programs__slider-navigation {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 54px;
+  right: 15px;
+
+  @media (min-width: $min-tablet-width) {
+    top: auto;
+    bottom: 50px;
+    right: 45px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 60px;
+    right: 100px;
+  }
+}
+
+.programs__slider-button {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: $icons-background-main;
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
+  }
+}
+
+.programs__slider-button--prev {
+  &::after {
+    transform: rotate(-135deg);
+  }
+}
+
+.programs__slider-button--next {
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.programs__slider-button--disabled {
+  &::after {
+    background-color: $button-disabled;
+  }
+}

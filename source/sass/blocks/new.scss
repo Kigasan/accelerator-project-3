@@ -24,110 +24,122 @@
 }
 
 .new--1 {
-  background-image: image-set(
-    url("../../img/news/slide-1-mobile@1x.webp") 1x type("image/webp"),
-    url("../../img/news/slide-1-mobile@2x.webp") 2x type("image/webp"),
-    url("../../img/news/slide-1-mobile@1x.jpg") 1x type("image/jpg"),
-    url("../../img/news/slide-1-mobile@2x.jpg") 2x type("image/jpg")
-  );
+  background-image:
+    image-set(
+      url("../../img/news/slide-1-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/news/slide-1-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/news/slide-1-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/news/slide-1-mobile@2x.jpg") 2x type("image/jpg")
+    );
 
   @media (min-width: $min-tablet-width) {
-    background-image: image-set(
-      url("../../img/news/slide-1-tablet@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-1-tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-1-tablet@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-1-tablet@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-1-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-1-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-1-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-1-tablet@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
-      url("../../img/news/slide-1-desktop@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-1-desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-1-desktop@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-1-desktop@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-1-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-1-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-1-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-1-desktop@2x.jpg") 2x type("image/jpg")
+      );
   }
 }
 
 .new--2 {
-  background-image: image-set(
-    url("../../img/news/slide-2-mobile@1x.webp") 1x type("image/webp"),
-    url("../../img/news/slide-2-mobile@2x.webp") 2x type("image/webp"),
-    url("../../img/news/slide-2-mobile@1x.jpg") 1x type("image/jpg"),
-    url("../../img/news/slide-2-mobile@2x.jpg") 2x type("image/jpg")
-  );
+  background-image:
+    image-set(
+      url("../../img/news/slide-2-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/news/slide-2-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/news/slide-2-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/news/slide-2-mobile@2x.jpg") 2x type("image/jpg")
+    );
 
   @media (min-width: $min-tablet-width) {
-    background-image: image-set(
-      url("../../img/news/slide-2-tablet@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-2-tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-2-tablet@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-2-tablet@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-2-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-2-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-2-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-2-tablet@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
-      url("../../img/news/slide-2-desktop@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-2-desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-2-desktop@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-2-desktop@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-2-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-2-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-2-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-2-desktop@2x.jpg") 2x type("image/jpg")
+      );
   }
 }
 
 .new--3 {
-  background-image: image-set(
-    url("../../img/news/slide-3-mobile@1x.webp") 1x type("image/webp"),
-    url("../../img/news/slide-3-mobile@2x.webp") 2x type("image/webp"),
-    url("../../img/news/slide-3-mobile@1x.jpg") 1x type("image/jpg"),
-    url("../../img/news/slide-3-mobile@2x.jpg") 2x type("image/jpg")
-  );
+  background-image:
+    image-set(
+      url("../../img/news/slide-3-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/news/slide-3-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/news/slide-3-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/news/slide-3-mobile@2x.jpg") 2x type("image/jpg")
+    );
 
   @media (min-width: $min-tablet-width) {
-    background-image: image-set(
-      url("../../img/news/slide-3-tablet@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-3-tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-3-tablet@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-3-tablet@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-3-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-3-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-3-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-3-tablet@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
-      url("../../img/news/slide-3-desktop@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-3-desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-3-desktop@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-3-desktop@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-3-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-3-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-3-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-3-desktop@2x.jpg") 2x type("image/jpg")
+      );
   }
 }
 
 .new--4 {
-  background-image: image-set(
-    url("../../img/news/slide-4-mobile@1x.webp") 1x type("image/webp"),
-    url("../../img/news/slide-4-mobile@2x.webp") 2x type("image/webp"),
-    url("../../img/news/slide-4-mobile@1x.jpg") 1x type("image/jpg"),
-    url("../../img/news/slide-4-mobile@2x.jpg") 2x type("image/jpg")
-  );
+  background-image:
+    image-set(
+      url("../../img/news/slide-4-mobile@1x.webp") 1x type("image/webp"),
+      url("../../img/news/slide-4-mobile@2x.webp") 2x type("image/webp"),
+      url("../../img/news/slide-4-mobile@1x.jpg") 1x type("image/jpg"),
+      url("../../img/news/slide-4-mobile@2x.jpg") 2x type("image/jpg")
+    );
 
   @media (min-width: $min-tablet-width) {
-    background-image: image-set(
-      url("../../img/news/slide-4-tablet@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-4-tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-4-tablet@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-4-tablet@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-4-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-4-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-4-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-4-tablet@2x.jpg") 2x type("image/jpg")
+      );
   }
 
   @media (min-width: $desktop-width) {
-    background-image: image-set(
-      url("../../img/news/slide-3-desktop@1x.webp") 1x type("image/webp"),
-      url("../../img/news/slide-3-desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/news/slide-3-desktop@1x.jpg") 1x type("image/jpg"),
-      url("../../img/news/slide-3-desktop@2x.jpg") 2x type("image/jpg")
-    );
+    background-image:
+      image-set(
+        url("../../img/news/slide-3-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/news/slide-3-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/news/slide-3-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../img/news/slide-3-desktop@2x.jpg") 2x type("image/jpg")
+      );
   }
 }
 
@@ -143,26 +155,26 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: -16px;
     left: 0;
     width: 16px;
     height: 16px;
     background-color: $background-secondary;
-    mask-image: url('/__spritemap#sprite-slider-pagination-mobile-corner-view');
+    mask-image: url("/__spritemap#sprite-slider-pagination-mobile-corner-view");
     mask-size: 100%;
     mask-repeat: no-repeat;
   }
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     right: -16px;
     width: 16px;
     height: 16px;
     background-color: $background-secondary;
-    mask-image: url('/__spritemap#sprite-slider-pagination-mobile-corner-view');
+    mask-image: url("/__spritemap#sprite-slider-pagination-mobile-corner-view");
     mask-size: 100%;
     mask-repeat: no-repeat;
   }
@@ -183,13 +195,13 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     right: -16px;
     width: 16px;
     height: 16px;
     background-color: $background-secondary;
-    mask-image: url('/__spritemap#sprite-slider-pagination-mobile-corner-view');
+    mask-image: url("/__spritemap#sprite-slider-pagination-mobile-corner-view");
     mask-size: 100%;
     mask-repeat: no-repeat;
   }
@@ -222,13 +234,13 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     right: -16px;
     width: 16px;
     height: 16px;
     background-color: $background-secondary;
-    mask-image: url('/__spritemap#sprite-slider-pagination-mobile-corner-view');
+    mask-image: url("/__spritemap#sprite-slider-pagination-mobile-corner-view");
     mask-size: 100%;
     mask-repeat: no-repeat;
   }
@@ -252,6 +264,7 @@
 .new__button-more {
   min-width: 30px;
   height: 30px;
+
   // border-radius: 50%;
   // background-color: $icons-background-main;
 
@@ -267,6 +280,6 @@
     height: 30px;
     top: 0;
     left: 0;
-    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
   }
 }

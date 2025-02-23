@@ -120,7 +120,7 @@
   grid-column: -2 / -1;
 
   &::after {
-    mask-image: url('/__spritemap#sprite-links-arrow-view');
+    mask-image: url("/__spritemap#sprite-links-arrow-view");
   }
 
   @media (min-width: $min-tablet-width) {
@@ -159,7 +159,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: -20px;
     left: -22px;
     width: 42px;
@@ -170,13 +170,13 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     top: -20px;
     left: -22px;
     width: 42px;
     height: 42px;
     background-color: $background-primary;
-    mask-image: url('/__spritemap#sprite-star-view');
+    mask-image: url("/__spritemap#sprite-star-view");
     mask-size: 22px 22px;
     mask-position: center;
     mask-repeat: no-repeat;
